@@ -63,7 +63,7 @@ dependencies = [
  "alsa-sys",
  "bitflags",
  "libc",
- "nix",
+ "nix 0.20.1",
 ]
 
 [[package]]
@@ -300,7 +300,7 @@ dependencies = [
  "mach",
  "ndk 0.3.0",
  "ndk-glue 0.3.0",
- "nix",
+ "nix 0.20.1",
  "oboe",
  "parking_lot",
  "stdweb",
@@ -1065,16 +1065,17 @@ checksum = "c7d73b3f436185384286bd8098d17ec07c9a7d2388a6599f824d8502b529702a"
 
 [[package]]
 name = "libmdns"
-version = "0.6.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98477a6781ae1d6a1c2aeabfd2e23353a75fe8eb7c2545f6ed282ac8f3e2fc53"
+version = "0.6.2"
+source = "git+https://github.com/baloo/libmdns.git?branch=baloo/multiple-interfaces#bea582a044e32cdbdfe422bbc8d96c241e073f61"
 dependencies = [
  "byteorder",
+ "futures-core",
  "futures-util",
  "hostname",
  "if-addrs",
  "log",
  "multimap",
+ "nix 0.22.1",
  "rand",
  "socket2",
  "thiserror",
@@ -1479,6 +1480,19 @@ name = "nix"
 version = "0.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "df8e5e343312e7fbeb2a52139114e9e702991ef9c2aea6817ff2440b35647d56"
+dependencies = [
+ "bitflags",
+ "cc",
+ "cfg-if 1.0.0",
+ "libc",
+ "memoffset",
+]
+
+[[package]]
+name = "nix"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7555d6c7164cc913be1ce7f95cbecdabda61eb2ccd89008524af306fb7f5031"
 dependencies = [
  "bitflags",
  "cc",
