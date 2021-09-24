@@ -1066,7 +1066,7 @@ checksum = "c7d73b3f436185384286bd8098d17ec07c9a7d2388a6599f824d8502b529702a"
 [[package]]
 name = "libmdns"
 version = "0.6.2"
-source = "git+https://github.com/baloo/libmdns.git?branch=baloo/multiple-interfaces#65c49b4b5f36f13aeb9ff75a486a6138b86b0246"
+source = "git+https://github.com/baloo/libmdns.git?branch=baloo/multiple-interfaces#39b3e9d696040052bb22d02e601772ba92375c27"
 dependencies = [
  "byteorder",
  "futures-core",
