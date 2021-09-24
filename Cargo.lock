@@ -1066,7 +1066,7 @@ checksum = "c7d73b3f436185384286bd8098d17ec07c9a7d2388a6599f824d8502b529702a"
 [[package]]
 name = "libmdns"
 version = "0.6.2"
-source = "git+https://github.com/baloo/libmdns.git?branch=baloo/multiple-interfaces#1d0b71c70537df464a2a971fb5cea311abc4d34c"
+source = "git+https://github.com/baloo/libmdns.git?branch=baloo/multiple-interfaces#9e0f967771ba4b9bd4db21fd002b1c59faab93f8"
 dependencies = [
  "byteorder",
  "futures-core",
@@ -2284,9 +2284,9 @@ checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
 
 [[package]]
 name = "tokio"
-version = "1.10.0"
+version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "01cf844b23c6131f624accf65ce0e4e9956a8bb329400ea5bcc26ae3a5c20b0b"
+checksum = "c2c2416fdedca8443ae44b4527de1ea633af61d8f7169ffa6e72c5b53d24efcc"
 dependencies = [
  "autocfg",
  "bytes",
